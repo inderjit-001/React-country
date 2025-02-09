@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #202020;
+}
+html {
+  font-size: 62.5%;
+  font-family: "urbanist";
+}
+
+body {
+  background-color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #ffffff;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  &:hover {
+    color: #2e86c1;
+  }
+}
+
+button {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  padding: 0.6rem 2.4rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  text-transform: unset;
+  transition: all 0.3s ease-in-out;
+  background-color: #202020;
+  color: #ffffff;
+  border-width: 0.1rem;
+  border-style: solid;
+  margin-top: 1.6rem;
+  border-radius: 0.4rem;
+}
+
+.container {
+  max-width: 140rem;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+header {
+  height: 10rem;
+  box-shadow: rbga(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  background-color: #202020;
+  width: 100%;
+
+  & .container {
+    height: 10rem;
+  }
+}
+
+.navbar-grid {
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  height: 10rem;
+  padding: 0 3.2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: flex-end;
+  list-style-type: none;
+
+  & li a {
+    color: #ffffff;
+  }
+}
+
+.hero-section .container {
+  padding: 3.2rem;
+  margin: 9rem auto;
+  gap: 6.4rem;
+}
+
+.paragraph {
+  margin: 3.2rem 0;
+}
+
+.heading-xl {
+  font-family: inherit;
+  font-size: clamp(5.2rem, 6vw, 4.241rem);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -1px;
+}
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .banner-image {
+  width: 100%;
+}
+
+.section-about {
+  margin: 0 auto 9rem;
+}
+
+.gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+@media screen and (max-width: 768px) {
+  .grid-two--cols {
+    grid-template-columns: 1fr;
+  }
+  .grid-three--cols {
+    grid-template-columns: 1fr;
+  }
+  .grid-four--cols {
+    grid-template-columns: 1fr;
+  }
+  .hero-section .container {
+    gap: 3.2rem;
+  }
+  .gradient-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.card {
+  max-width: 55rem;
+  border: 0;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding: 40px;
+}
+
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1;
+  right: -1;
+  border-radius: 45px;
+  z-index: -1;
+}
+
+.bg-green-box::after {
+  background: linear-gradient(71deg, #00ff00, #00ff00, #00ff00);
+}
+
+.bg-white-box::after {
+  background: linear-gradient(71deg, #ffffff, #ffffff, #ffffff);
+}
+
+.bg-yellow-box::after {
+  background: linear-gradient(71deg, #ffff00, #ffff00, #ffff00);
+}
+
+.bg-blue-box::after {
+  background: linear-gradient(71deg, #0000ff, #0000ff, #0000ff);
+}
+
+.card-title {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.02rem;
+  padding-bottom: 8px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.02rem;
+  padding-bottom: 8px;
+  max-width: 470px;
+}
+
+.footer-contact {
+  display: flex;
+}
+.icon {
+  font-size: 30px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+.footer-section {
+  background-color: #202020;
+  padding: 40px 0;
+}
