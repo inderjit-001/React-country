@@ -260,3 +260,38 @@ nav ul {
   background-color: #202020;
   padding: 40px 0;
 }
+
+.section-contact {
+  padding: 40px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-wrapper {
+  max-width: 400px;
+}
+.form-contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #202020;
+  color: #ffffff;
+}
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #202020;
+  color: #ffffff;
+  font-family: inherit;
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

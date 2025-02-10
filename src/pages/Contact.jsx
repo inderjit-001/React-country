@@ -21,7 +21,7 @@ function Contact() {
 
           <input
             type="email"
-            placeholder="email"
+            placeholder="Email"
             autoComplete="false"
             name="email"
             required
@@ -35,7 +35,7 @@ function Contact() {
             name="message"
           ></textarea>
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn submit-btn btn-primary">
             Submit
           </button>
         </form>
